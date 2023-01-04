@@ -1,0 +1,74 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Fraunces');
+
+// - Dark cyan: hsl(158, 36%, 37%)
+// - Cream: hsl(30, 38%, 92%)
+
+// ### Neutral
+
+// - Very dark blue: hsl(212, 21%, 14%)
+// - Dark grayish blue: hsl(228, 12%, 48%)
+// - White: hsl(0, 0%, 100%)
+
+$dark-cyan: hsl(158, 36%, 27%);
+$cream: hsl(30, 38%, 92%);
+$dark-blue: hsl(212, 21%, 14%);
+$grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $cream;
+    font-size: .875rem;
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+#page-container {
+    position: relative;
+    // min-height: 100vh; #inherits height from body's height:100%, so unnecessary
+}
+
+#content-wrap {
+    padding-bottom: 1rem;
+}
+
+
+.productPane {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    align-self: end;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 1rem;
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+

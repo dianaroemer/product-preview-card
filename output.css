@@ -1,0 +1,51 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.google.com/specimen/Fraunces");
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(30deg, 38%, 92%);
+  font-size: 0.875rem;
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+#page-container {
+  position: relative;
+}
+
+#content-wrap {
+  padding-bottom: 1rem;
+}
+
+.productPane {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  align-self: end;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 1rem;
+  width: 100%;
+  display: flex;
+  place-content: center;
+}
+
+/*# sourceMappingURL=output.css.map */
