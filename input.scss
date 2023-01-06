@@ -59,19 +59,28 @@ body {
 }
 
 #content-wrap {
-    padding-bottom: 1rem;
+    // padding-bottom: 1rem;
 }
 
 
 .productPane {
-    height: 100%;
+
+    // -------------------------------------------------------------------------
+    // WHEN YOU FINISH - Fix this height to be variable to the page! a la 
+    // height: 90%; or something like this
+    // height: 602px; 
+    height: auto;
+    // -------------------------------------------------------------------------
+    
+
+
     width: 92%;
     margin-left: 4%;
     // display: grid;
     // align-self: end;
     background: $white;
     border-radius: 10px;
-    // padding-bottom: 0;
+    padding-bottom: 10px;
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
@@ -80,7 +89,7 @@ body {
 .productImageMobile {
     width: 100%;
     border-radius: 10px 10px 0 0;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 .productType {
@@ -92,45 +101,45 @@ body {
     
 
     padding-top: 5px;
-    padding-left: 20px;
-    margin-bottom: 10px;
+    padding-left: 24px;
+    margin-bottom: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: .4em;
-    font-size: .74em;
+    letter-spacing: .44em;
+    font-size: .74rem;
     height: .8rem;
     color:$grayish-blue;
 }
 
 .productName{
-    padding-left: 20px;
+    padding-left: 24px;
     padding-right: 20px;
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 1.7rem;
-    line-height: 1.65rem;
+    font-size: 2rem;
+    line-height: 2rem;
     // font-stretch: condensed;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .productDescription{
-    padding-left: 20px;
-    margin-right: 20px;
+    padding-left: 24px;
+    margin-right: 24px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: .76rem;
-    line-height: 1.23rem;
+    font-size: .88rem;
+    line-height: 1.45rem;
     color: $grayish-blue;
 }
 
 .productPriceContainer {
     display: flex;
     // height: 2rem;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     align-items: center;
 }
 
@@ -138,7 +147,7 @@ body {
     font-family: 'Fraunces', serif;
     color: $light-cyan;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 
@@ -146,26 +155,32 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-left: 10px;
     text-decoration: line-through;
-    padding-left: 1rem;
-    font-size: .7rem;
+    padding-left: 1.15rem;
+    font-size: .85rem;
     color: $grayish-blue;
 
 }
 
 .buttonAddCart {
-    height: 2.5rem;
+    height: 3rem;
     width: 86%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 40px;
+    margin-bottom: 14px;
     border: none;
     border-radius: .45rem;
     background-color: $light-cyan;
     color: $white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: .7rem;
+    font-size: .85rem;
     text-align: center;
+    letter-spacing: .02rem;
+    transition-duration: .4s;
+}
+
+.buttonAddCart:hover {
+    background-color: $dark-cyan;
 }
 
 .buttonAddCartContent {
@@ -176,8 +191,8 @@ body {
 
 .cartIcon {
     display: inline-block;
-    height: .8rem;
-    padding-right: .5rem;
+    height: 1rem;
+    padding-right: .75rem;
 }
 
 

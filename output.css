@@ -28,63 +28,60 @@ body {
   position: relative;
 }
 
-#content-wrap {
-  padding-bottom: 1rem;
-}
-
 .productPane {
-  height: 100%;
+  height: auto;
   width: 92%;
   margin-left: 4%;
   background: hsl(0deg, 0%, 100%);
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 
 .productImageMobile {
   width: 100%;
   border-radius: 10px 10px 0 0;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 .productType {
   padding-top: 5px;
-  padding-left: 20px;
-  margin-bottom: 10px;
+  padding-left: 24px;
+  margin-bottom: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.4em;
-  font-size: 0.74em;
+  letter-spacing: 0.44em;
+  font-size: 0.74rem;
   height: 0.8rem;
   color: hsl(228deg, 12%, 48%);
 }
 
 .productName {
-  padding-left: 20px;
+  padding-left: 24px;
   padding-right: 20px;
   font-family: "Fraunces", serif;
   font-weight: 700;
-  font-size: 1.7rem;
-  line-height: 1.65rem;
-  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
 }
 
 .productDescription {
-  padding-left: 20px;
-  margin-right: 20px;
+  padding-left: 24px;
+  margin-right: 24px;
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 0.76rem;
-  line-height: 1.23rem;
+  font-size: 0.88rem;
+  line-height: 1.45rem;
   color: hsl(228deg, 12%, 48%);
 }
 
 .productPriceContainer {
   display: flex;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
   align-items: center;
 }
 
@@ -92,32 +89,38 @@ body {
   font-family: "Fraunces", serif;
   color: hsl(158deg, 36%, 37%);
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .productPriceOriginal {
   font-family: "Montserrat", sans-serif;
   padding-left: 10px;
   text-decoration: line-through;
-  padding-left: 1rem;
-  font-size: 0.7rem;
+  padding-left: 1.15rem;
+  font-size: 0.85rem;
   color: hsl(228deg, 12%, 48%);
 }
 
 .buttonAddCart {
-  height: 2.5rem;
+  height: 3rem;
   width: 86%;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 40px;
+  margin-bottom: 14px;
   border: none;
   border-radius: 0.45rem;
   background-color: hsl(158deg, 36%, 37%);
   color: hsl(0deg, 0%, 100%);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   text-align: center;
+  letter-spacing: 0.02rem;
+  transition-duration: 0.4s;
+}
+
+.buttonAddCart:hover {
+  background-color: hsl(158deg, 36%, 27%);
 }
 
 .buttonAddCartContent {
@@ -128,8 +131,8 @@ body {
 
 .cartIcon {
   display: inline-block;
-  height: 0.8rem;
-  padding-right: 0.5rem;
+  height: 1rem;
+  padding-right: 0.75rem;
 }
 
 footer {
