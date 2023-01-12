@@ -195,6 +195,7 @@ footer {
     .productImageDesktop {
         display: block;
         height: 100%;
+        width: auto;
         border-radius: 10px 0 0 10px;
     }
 
@@ -209,6 +210,7 @@ footer {
     .contentContainer{ 
         padding: 1rem;
         padding-left: 7px;
+        // position: relative;
     }
 
     .productType {

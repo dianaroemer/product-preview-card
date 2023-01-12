@@ -166,6 +166,7 @@ footer {
   .productImageDesktop {
     display: block;
     height: 100%;
+    width: auto;
     border-radius: 10px 0 0 10px;
   }
   .productPane {
