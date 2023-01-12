@@ -176,7 +176,10 @@ footer {
     padding-bottom: 0;
     margin-left: 0;
   }
-  .contentContainer {
+  .imageContainer {
+    width: 50%;
+  }
+  .productContentContainer {
     padding: 1rem;
     padding-left: 7px;
   }
