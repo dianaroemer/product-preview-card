@@ -1,27 +1,5 @@
-// @import url('https://fonts.google.com/specimen/Montserrat');
-// @import url('https://fonts.google.com/specimen/Fraunces');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
-
-// @font-face {
-//     font-family: Montserrat;
-//     src: url('https://fonts.google.com/specimen/Montserrat');
-// }
-
-// @font-face {
-//     font-family: Fraunces;
-//     src: url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
-// }
-
-
-// - Dark cyan: hsl(158, 36%, 37%)
-// - Cream: hsl(30, 38%, 92%)
-
-// ### Neutral
-
-// - Very dark blue: hsl(212, 21%, 14%)
-// - Dark grayish blue: hsl(228, 12%, 48%)
-// - White: hsl(0, 0%, 100%)
 
 $light-cyan: hsl(158, 36%, 37%);
 $dark-cyan: hsl(158, 36%, 27%);
@@ -59,7 +37,9 @@ body {
 }
 
 #content-wrap {
-    // padding-bottom: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0;
+    width: 100%;
 }
 
 
@@ -76,14 +56,14 @@ body {
 
     width: 92%;
     margin-left: 4%;
-    // display: grid;
-    // align-self: end;
     background: $white;
     border-radius: 10px;
     padding-bottom: 10px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
+}
+
+.contentWrap {
+    padding: 0;
+    margin: 0;
 }
 
 .productImageMobile {
@@ -92,13 +72,11 @@ body {
     padding-bottom: 1rem;
 }
 
-.productType {
+.productImageDesktop {
+    display: none;
+}
 
-    // -------------------------------------------------------------------------
-    // WHEN YOU FINISH - Use commented padding-top below instead off this padding-top
-    // padding-top: 0px;
-    // -------------------------------------------------------------------------
-    
+.productType {
 
     padding-top: 5px;
     padding-left: 24px;
@@ -119,7 +97,6 @@ body {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2rem;
-    // font-stretch: condensed;
     margin-bottom: 1rem;
 }
 
@@ -136,7 +113,6 @@ body {
 
 .productPriceContainer {
     display: flex;
-    // height: 2rem;
     padding-bottom: 16px;
     padding-left: 24px;
     padding-right: 24px;
@@ -206,3 +182,57 @@ footer {
 }
 
 
+
+@media screen and (min-width: 427px ) {
+    // .productPane {
+    //     background-color: red;
+    // }
+
+    .productImageMobile {
+        display: none;
+    }
+
+    .productImageDesktop {
+        display: block;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .productPane {
+        display: flex;
+        width: 600px;
+        height: 450px;
+        padding-bottom: 0;
+        margin-left: 0;
+    }
+
+    .contentContainer{ 
+        padding: 1rem;
+        padding-left: 7px;
+    }
+
+    .productType {
+        padding-top: 18px;
+    }
+
+    .productName {
+        padding-top: 10px;
+    }
+
+    .productDescription {
+        padding-top: 10px;
+    }
+
+    .productPriceContainer {
+        padding-top: 6px;
+    }
+
+    .buttonAddCart{
+        margin-top: 10px;
+    }
+
+    .buttonAddCart:hover {
+        background-color: $dark-cyan;
+    }
+    
+}
