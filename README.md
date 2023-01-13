@@ -1,5 +1,5 @@
 # Link to Live Page Here!
-# https://dominicroemer.github.io/product-preview-card/
+# https://dianaroemer.github.io/product-preview-card/
 
 # Frontend Mentor - Product preview card component
 
